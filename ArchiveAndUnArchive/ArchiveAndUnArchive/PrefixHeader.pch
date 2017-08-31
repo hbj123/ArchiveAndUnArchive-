@@ -1,0 +1,33 @@
+//
+//  PrefixHeader.pch
+//  ArchiveAndUnArchive
+//
+//  Created by hbj on 2017/8/31.
+//  Copyright © 2017年 宝剑. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+/******UI******/
+#define SCREENW  [UIScreen mainScreen].bounds.size.width
+#define SCREENH  [UIScreen mainScreen].bounds.size.height
+
+/******
+ NSHomeDirectory() + /fileName   =  /var/mobile/Containers/Data/Application/28C6BFE8-4E50-4DEB-9E55-18F0815CDBC5/fileName  归档失败
+ 
+ [...NSDocumentDirectory...] +/fileName  = /var/mobile/Containers/Data/Application/F7DC1040-57CB-4104-8AD6-55E9F287FC38/Documents/fileName 成功
+ 
+ ******/
+/******模拟器成功 真机失败******/
+#define kSimulatorHomeP(a)  [NSHomeDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"%@", a]]
+/******模拟器成功 真机成功******/
+#define kHomeP(a)  [NSHomeDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"Documents/%@", a]]
+/******模拟器成功 真机成功******/
+#define kSearchPath(a)  [ [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex: 0] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@", a]]
+
+
+#endif /* PrefixHeader_pch */
