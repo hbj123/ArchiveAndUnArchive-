@@ -38,7 +38,8 @@
     if (!_dataMArr) {
         _dataMArr = [NSMutableArray arrayWithObjects:@"一个对象归档成一个文件",
                      @"多个对象归档成一个文件",
-                     @"自定义对象归档", nil];
+                     @"自定义对象归档",
+                     @"运行时归档",nil];
     }
     return _dataMArr;
 }
@@ -46,7 +47,8 @@
     if (!_claa_arr) {
         _claa_arr = [NSArray arrayWithObjects:@"FirstViewController",
                      @"SecondViewController",
-                     @"ThirdViewController", nil];
+                     @"ThirdViewController",
+                     @"FourthViewController", nil];
     }
     return _claa_arr;
 }

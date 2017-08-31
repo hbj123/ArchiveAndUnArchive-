@@ -19,6 +19,9 @@
 		031279E71F57EF9600D9F36F /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 031279E61F57EF9600D9F36F /* FirstViewController.m */; };
 		031279EA1F57EFC200D9F36F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 031279E91F57EFC200D9F36F /* SecondViewController.m */; };
 		031279ED1F57EFD700D9F36F /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 031279EC1F57EFD700D9F36F /* ThirdViewController.m */; };
+		031279F21F580A4B00D9F36F /* Member.m in Sources */ = {isa = PBXBuildFile; fileRef = 031279F11F580A4B00D9F36F /* Member.m */; };
+		031279F81F580E4F00D9F36F /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 031279F71F580E4F00D9F36F /* FourthViewController.m */; };
+		031279FB1F580E6E00D9F36F /* BJ_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 031279FA1F580E6E00D9F36F /* BJ_Model.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,12 @@
 		031279EB1F57EFD700D9F36F /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		031279EC1F57EFD700D9F36F /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		031279EE1F57F95500D9F36F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		031279F01F580A4B00D9F36F /* Member.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Member.h; sourceTree = "<group>"; };
+		031279F11F580A4B00D9F36F /* Member.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Member.m; sourceTree = "<group>"; };
+		031279F61F580E4F00D9F36F /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		031279F71F580E4F00D9F36F /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		031279F91F580E6E00D9F36F /* BJ_Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJ_Model.h; sourceTree = "<group>"; };
+		031279FA1F580E6E00D9F36F /* BJ_Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJ_Model.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +123,7 @@
 		031279A31F57B06500D9F36F /* ArchiveAndUnArchive */ = {
 			isa = PBXGroup;
 			children = (
+				031279EF1F580A2700D9F36F /* New Group1 */,
 				031279D81F57BC9F00D9F36F /* New Group */,
 				031279A71F57B06500D9F36F /* AppDelegate.h */,
 				031279A81F57B06500D9F36F /* AppDelegate.m */,
@@ -166,8 +176,21 @@
 				031279E91F57EFC200D9F36F /* SecondViewController.m */,
 				031279EB1F57EFD700D9F36F /* ThirdViewController.h */,
 				031279EC1F57EFD700D9F36F /* ThirdViewController.m */,
+				031279F61F580E4F00D9F36F /* FourthViewController.h */,
+				031279F71F580E4F00D9F36F /* FourthViewController.m */,
 			);
 			name = "New Group";
+			sourceTree = "<group>";
+		};
+		031279EF1F580A2700D9F36F /* New Group1 */ = {
+			isa = PBXGroup;
+			children = (
+				031279F01F580A4B00D9F36F /* Member.h */,
+				031279F11F580A4B00D9F36F /* Member.m */,
+				031279F91F580E6E00D9F36F /* BJ_Model.h */,
+				031279FA1F580E6E00D9F36F /* BJ_Model.m */,
+			);
+			name = "New Group1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,8 +332,11 @@
 				031279EA1F57EFC200D9F36F /* SecondViewController.m in Sources */,
 				031279AC1F57B06500D9F36F /* ViewController.m in Sources */,
 				031279E71F57EF9600D9F36F /* FirstViewController.m in Sources */,
+				031279F21F580A4B00D9F36F /* Member.m in Sources */,
 				031279A91F57B06500D9F36F /* AppDelegate.m in Sources */,
+				031279FB1F580E6E00D9F36F /* BJ_Model.m in Sources */,
 				031279A61F57B06500D9F36F /* main.m in Sources */,
+				031279F81F580E4F00D9F36F /* FourthViewController.m in Sources */,
 				031279E41F57EB5D00D9F36F /* BaseViewController.m in Sources */,
 				031279ED1F57EFD700D9F36F /* ThirdViewController.m in Sources */,
 			);

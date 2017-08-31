@@ -22,7 +22,7 @@
 /******一个对象归档成一个文件  ******/
 - (void)startArchive {
     NSArray *array = @[@"中国", @"河南", @"信阳"];
-    NSString *filePath = kSearchPath(@"aaa.plist");
+    NSString *filePath = kSearchPath(@"single.plist");
     NSLog(@"filePath=%@", filePath);
     BOOL isTure = [NSKeyedArchiver archiveRootObject:array toFile:filePath];
     [self statueLabelWithAnimation:isTure tag:0];
@@ -31,7 +31,7 @@
 
 - (void)startUnArchive {
     /*解归档*/
-     NSString *filePath = kSearchPath(@"array.plist");
+     NSString *filePath = kSearchPath(@"single.plist");
      id idObject = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
      NSLog(@"idObject=%@",idObject);
     if (idObject) {
@@ -42,6 +42,7 @@
 
 
 - (void)statueLabelWithAnimation:(BOOL)animation tag:(NSInteger)tag {
+    NSLog(@"statueLabelWithAnimation");
     [super statueLabelWithAnimation:animation tag:tag];
 }
 
